@@ -2,69 +2,109 @@
 <html lang="es">
 
 <head>
-       
     <meta charset="UTF-8">
-        <title>Robótica Móvil - Portal Docente</title>
-       
+    <title>Robótica Móvil - Portal Docente</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes necesarias -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-            <nav class="navbar">
-                <h2 class="logo">Robótica Móvil</h2>         <ul class="nav-links">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="plan.html">Plan de Trabajo</a></li>
-                        <li><a href="textos.html">Textos de Apoyo</a></li>
-                        <li><a href="diapositivas.html">Diapositivas</a></li>
-                        <li><a href="videos.html">Videos</a></li>
-                        <li><a href="cuestionarios.html">Cuestionarios</a></li>
-                    </ul>
-            </nav>
+    <!-- Navbar cargada dinámicamente -->
+    <div id="navbar"></div>
 
-            <header class="hero">
-                <h1>Bienvenido al Curso de Robótica Móvil</h1>
-                <p>¡Bienvenidos al fascinante mundo de la Robótica Móvil! Prepárense para explorar, construir y
+    <!-- Sección principal -->
+    <header class="hero">
+        <h1>Bienvenido al Curso de Robótica Móvil</h1>
+        <p>¡Bienvenidos al fascinante mundo de la Robótica Móvil! Prepárense para explorar, construir y
             programar robots que se mueven e interactúan con su entorno, combinando creatividad, tecnología y
             aprendizaje práctico.</p>
-                <a href="plan.html" class="cta-button">Ver Plan</a>     </header>
+        <a href="plan.html" class="cta-button">Plan de Trabajo</a>
+    </header>
 
+    <section class="objetivos">
+
+        <h2 style="color: white;">Pasado - Presente - Futuro</h2>
+
+        <div class="cajas-container">
+            <div class="caja">
+                <img src="img/robot11.jpg" alt="Programación de Robots">
+                <h3>ROBOTICA DEL PASADO</h3>
+                <p style="text-align: justify;">El primer robot móvil fue ELSIE (1953, Inglaterra), capaz de seguir luz
+                    con mecanismos simples. En
+                    los años 60, "Shakey" en Stanford se convirtió en el primer robot que percibía y comprendía su
+                    entorno, marcando un hito en la robótica móvil.</p>
+            </div>
+            <div class="caja">
+                <img src="img/robot2.jpg" alt="Lógica y Algoritmos">
+                <h3>ROBOTICA DEL PRESENTE</h3>
+                <p style="text-align: justify;">Hoy, la robótica móvil crece gracias a la inteligencia artificial y
+                    sensores avanzados, permitiendo a
+                    los robots trabajar en entornos complejos y sectores como logística, industria, agricultura y
+                    medicina, mejorando productividad y eficiencia.</p>
+            </div>
+            <div class="caja">
+                <img src="img/robot3.jpg" alt="Proyectos Prácticos">
+                <h3>ROBOTICA DEL FUTURO</h3>
+                <p style="text-align: justify;">Se espera que los robots móviles sean más autónomos, inteligentes y
+                    capaces de interactuar con
+                    humanos, adaptándose y aprendiendo del entorno. Con avances en IA, energía y seguridad, su uso
+                    crecerá en sectores como sanidad, atención al cliente, manufactura y transporte, transformando
+                    diversas industrias.</p>
+            </div>
+        </div>
+    </section>
 
     <section class="bio-section">
+
         <div class="bio-container">
             <div class="bio-photo">
                 <img src="img/perfil.jpg" alt="Foto del Docente">
             </div>
             <div class="bio-content">
                 <h2>Conoce al Docente</h2>
-                <h3>Dr. Gustavo Mollericona</h3>
-                <p>
-                    Soy un apasionado de la **Robótica Móvil y la Inteligencia Artificial** con más de 15 años de
-                    experiencia en investigación y docencia. Mi enfoque principal es en sistemas de navegación autónoma,
-                    visión por computadora y diseño de algoritmos de control robustos.
-                </p>
-                <p>
-                    Poseo un Doctorado en Ingeniería de Sistemas y he publicado en diversas conferencias
-                    internacionales. Mi objetivo es inspirar a la próxima generación de ingenieros en el fascinante
-                    campo de la robótica.
+                <h3>Juan Gustavo Mollericona Herrera</h3>
+                <p style="text-align: justify;">
+                    Soy un apasionado de la Robótica Móvil y la Inteligencia Artificial, con más de 15 años de
+                    experiencia en investigación y docencia. A lo largo de mi carrera, he desarrollado proyectos
+                    innovadores en diseño y programación de robots móviles, integración de sensores inteligentes y
+                    sistemas autónomos. Me especializo en la creación de soluciones tecnológicas aplicadas a la
+                    educación, la industria y la investigación científica, fomentando en los estudiantes habilidades
+                    prácticas, pensamiento crítico y creatividad para enfrentar los desafíos del mundo moderno.
                 </p>
                 <ul class="contact-info">
-                    <li><i class="icon-email">📧</i> Email: <a href="mailto:gustavo@gmail.com">gustavo@mail.com</a>
-                    </li>
+                    <li>Email: <a href="mailto:gustavo@mail.com">gustavo@mail.com</a></li>
+                    <li>Teléfono: <a href="tel:+59167187160">+591 71234567</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/gustavomollericona" target="_blank">Gustavo
+                            Mollericona</a></li>
+                    <li>Twitter: <a href="https://twitter.com/gustavomollericona"
+                            target="_blank">@gustavomollericona</a></li>
+                    <li>Oficina: Edificio de Robótica, Aula 202</li>
                 </ul>
+
             </div>
+        </div>
+
+        <div class="qr-box">
+            <h2 style="color: white;">¡Forma parte de nuestro grupo y vive la experiencia de aprender y compartir!</h2>
+            <img src="img/qr_grupo.jpeg" alt="QR del curso" class="qr-img">
+
+            <a href="https://t.me/+qQziSTJB9Y0yMDBh" class="qr-button" target="_blank">
+                Ir al enlace
+            </a>
         </div>
     </section>
 
-    <script src="main.js"></script>
-</body>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data)
+            .catch(err => console.error("Error cargando la navbar:", err));
+    </script>
 
-</html>
-
-   
-<script src="main.js"></script>
 </body>
 
 </html>

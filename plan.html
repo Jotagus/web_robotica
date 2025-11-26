@@ -7,68 +7,67 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <h2 class="logo">🤖 Robótica Móvil</h2>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="plan.html">Plan de Trabajo</a></li>
-            <li><a href="textos.html">Textos de Apoyo</a></li>
-            <li><a href="diapositivas.html">Diapositivas</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="cuestionarios.html">Cuestionarios</a></li>
-        </ul>
-    </nav>
+    <!-- Navbar cargada dinámicamente -->
+    <div id="navbar"></div>
 
     <div class="page-header">
         <h1>Plan de Trabajo del Curso</h1>
         <h2>objetivo</h2>
         <p>Desarrollar competencias para comprender, diseñar y programar robots móviles,</p>
         <p>sus componentes, control y aplicaciones en distintos entornos.</p><br>
-        <a href="documentos/plan.pdf" class="module-link" target="_blank" rel="noopener noreferrer">Ver Plan Completo</a>
+        <a href="documentos/PlanDeTrabajo.pdf" class="module-link" target="_blank" rel="noopener noreferrer">Ver Plan
+            Completo</a>
     </div>
 
     <section class="modules-grid">
 
         <div class="module-card">
-            <h3 class="module-title">Módulo 1: Introducción a la Robótica Móvil</h3>
+            <h3 class="module-title">Unidad 1: Introducción a la Robótica Móvil</h3>
             <p class="module-status">Estado: En curso</p>
             <ul class="topic-list">
-                <li><i class="icon-check">✅</i> Cinemática y Modelado del Robot</li>
-                <li><i class="icon-check">✅</i> Tipos de Actuadores y Sensores</li>
-                <li><i class="icon-check">✅</i> Introducción al ROS (Robot Operating System)</li>
+                <li><i class="icon-check">✅</i> Historia y aplicaciones de la robótica móvil.</li>
+                <li><i class="icon-check">✅</i> Tipos de robots móviles: terrestres, aéreos y submarinos.</li>
+                <li><i class="icon-check">✅</i> Conceptos básicos: actuadores, sensores, control y navegación.</li>
             </ul>
             <a href="unidad1.html" class="module-link">Ver Recursos</a>
         </div>
 
         <div class="module-card">
-            <h3 class="module-title">Módulo 2: Localización y Mapeo (SLAM)</h3>
+            <h3 class="module-title">Unidad 2: Cinemática y Dinámica de Robots Móviles</h3>
             <p class="module-status">Estado: Próximamente</p>
             <ul class="topic-list">
-                <li><i class="icon-time">⏳</i> Filtros de Kalman Extendidos (EKF)</li>
-                <li><i class="icon-time">⏳</i> Algoritmos de Mapeo 2D y 3D</li>
-                <li><i class="icon-time">⏳</i> Sensores LiDAR y Cámaras de Profundidad</li>
+                <li><i class="icon-time">⏳</i> Sistemas de referencia y movimiento.</li>
+                <li><i class="icon-time">⏳</i> Modelos cinemáticos de robots diferenciales y omnidireccionales.</li>
+                <li><i class="icon-time">⏳</i> Dinámica básica: fuerzas, torque y equilibrio.</li>
             </ul>
             <a href="#" class="module-link disabled">Pronto</a>
         </div>
 
         <div class="module-card">
-            <h3 class="module-title">Módulo 3: Planificación de Trayectorias</h3>
+            <h3 class="module-title">Unidad 3: Sensores y Percepción</h3>
             <p class="module-status">Estado: Próximamente</p>
             <ul class="topic-list">
-                <li><i class="icon-time">⏳</i> Algoritmos A* y RRT</li>
-                <li><i class="icon-time">⏳</i> Navegación basada en Campos Potenciales</li>
-                <li><i class="icon-time">⏳</i> Evasión Dinámica de Obstáculos</li>
+                <li><i class="icon-time">⏳</i> Tipos de sensores: ultrasonido, infrarrojos, LIDAR, cámaras, IMU.</li>
+                <li><i class="icon-time">⏳</i> Integración de sensores en robots móviles.</li>
+                <li><i class="icon-time">⏳</i> Procesamiento de señales y adquisición de datos.</li>
             </ul>
             <a href="#" class="module-link disabled">Pronto</a>
         </div>
 
     </section>
 
-    <script src="main.js"></script>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data)
+            .catch(err => console.error("Error cargando la navbar:", err));
+    </script>
 </body>
 
 </html>
